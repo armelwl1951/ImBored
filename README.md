@@ -2,6 +2,7 @@
 ## **Welcome to I'mBored Github Page!**
 
 This app is an API Capstone project for the Thinkful.com bootcamp that I'm currently enrolled in.  
+[I'mBored](https://armelwl1951.github.io/ImBored-Capstone/)
 
 ## **What is I'mBored?**
 
