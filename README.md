@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+## **Welcome to I'mBored Github Page!**
 
-You can use the [editor on GitHub](https://github.com/armelwl1951/ImBored-Capstone/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This app is an API Capstone project for the Thinkful.com bootcamp that I'm currently enrolled in.  
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### **What is I'mBored?**
 
-### Markdown
+I'mBored is a random movie search engine that allows the user to input a variety of search preferences in order to find a movie that fits what the user is interested in watching.  The app uses two API services: TMDB & Utelly in order to obtain the random movie selection through a two-step process.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1.  First sending the search-form-request through TMDB, a movie-information resource, that can be searched using almost any parameter.  This request then gets the results from TMDB, numbers the total pages, and then obtains a random page number to choose for the results.  The results and information from TMDB are displayed on the screen.
 
-```markdown
-Syntax highlighted code block
+2.  Using the TMDB ID for the resulting movie, the ID is ran through Utelly in order to see if the resulting movie is streaming on any networks, such as: AmazonPrimeVideo, Netflix, Hulu, etc.
+If a result comes back, then links to the movies stream is listed.
 
-# Header 1
-## Header 2
-### Header 3
+## Built With
 
-- Bulleted
-- List
+* HTML
+* CSS
+* JavaScript
+* jQuery
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/armelwl1951/ImBored-Capstone/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Sources
+* [TMDB](https://www.themoviedb.org/documentation/api)
+* [Utelly](https://rapidapi.com/utelly/api/utelly)
