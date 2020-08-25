@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 60px;
+    text-shadow: 0px 0px 20px white;
+    color: rgba(0, 0, 0, 0.5);
+    background: url('https://images.unsplash.com/photo-1494714198743-ba35ce177d03?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80') no-repeat;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    height: 55px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.release-year-label-containter {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.search-input {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+    border: none;
+    height: 35px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.search-input::placeholder {
+    color: lightgrey;
+}
+
+label {
+    font-size: 18px;
+}
+
+.release-year-instruct {
+    font-size: 18px;
+    margin-bottom: -5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.release-year-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.tmdb-logo {
+    height: 25px;
+}
+
+.instructions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.app-info {
+    width: 300px;
+    font-size: 18px;
+}
+
+.results-area {
+ width: 320px;
+}
+
+.genre-label {
+    margin-top: 20px;
+}
+
+.moviePoster {
+    box-shadow: 1px 1px 10px white;
+}
+
+select {
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error-message {
+    margin-top: 0;
+    font-size: 24px;
+    color: red;
+}
+
+.not-available {
+    color: white;
+    font-size: 24px;
+}
+
+.new-search {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.stream-service {
+    width: 100px;
+    background-color: white;
+}
+
+.streaming-area {
+    padding-top: 20px;
+}
+
+.stream-service:hover {
+    background-color: white;
+}
+
+.tmdb-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tmdb-disclosure {
+    font-size: 10px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.stream-button, .begin-button, .search-button, .new-search-button {
+    background-color: goldenrod;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    height: 55px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+a {
+  background-color: goldenrod;
+  color: white;
+} 
+
+a:hover {
+  color: darkgoldenrod;
+}
+
+
+footer {
+	width: 100%;
+	height: 100%;
+    background-color: var(--main-header-background);
+}
+
+.copyright {
+	color: #fff;
+	font-size: 1.2rem;
+	line-height: 40px;
+	text-align: center;
+}
+
+.copyright a{
+	color: white;
+	font-size: 1rem;
+	letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.copyright a:hover{
+	color: darkgoldenrod;
+}
+
+.search-button {
+    margin-top: 20px;
+}
+
+.begin-button:hover {
+    background-color: darkgoldenrod;
+}
+
+.search-button:hover {
+    background-color: darkgoldenrod;
+}
+
+.new-search-button:hover {
+    background-color: darkgoldenrod;
+}
+
+.stream-service {
+    height: 40px;
+    border-radius: 5px;
+    padding: 1px;
+    color: white;
+}
+
+.movieTitle {
+    margin-top: 10px;
+}
+
+.overview {
+    margin-bottom: 20px;
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+}
+
+.release-year-labels {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.name {
+    margin-top: 10px;
+}
+
+.year-label {
+    margin-bottom: 10px;
+}
+
+.year {
+    width: 60px;
+}
+
+.to {
+    margin-top: 45px;
+}
+
+@media screen and (min-width: 600px) {
+    .js-streaming {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .js-streaming li {
+        padding-left: 2.5px;
+        padding-right: 2.5px;
+    }
+
+    .overview {
+        width: 500px;
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'mBored</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/a8c3be6220.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>I'mBored</h1>
+    </header>
+        <div class="instructions-container">
+            <p class="app-info">This app uses the The Movie Database and Utelly APIs to provide you with a random movie recommendation.</p>
+        </div>
+        <form class="search js-search">
+            <p class="release-year-instruct">Set release years (if you want)</p>
+            <div class="release-year-container">
+                <div class="release-year-labels">
+                    <label for="number1" class="year-label">Min Year</label>
+                    <input type="number" placeholder="1990" id="number1" min="1900" max="2020" class="search-input year js-min-year">
+                </div>
+                <p class="to">to</p>
+                <div class="release-year-labels">
+                    <label for="number2" class="year-label">Max Year</label>
+                    <input type="number" placeholder="2020" id="number2" min="1900" max="2020" class="search-input year js-max-year">
+                </div>
+            </div>
+            <label for="name">
+                <span class="input-label">Name a movie person</span>
+                <span class="input-label">(if you feel like it)</span>
+            </label>
+            <input type="text" placeholder="Tom Cruise" id="name" class="search-input name js-name">
+            <label for="genre" class="genre-label">Pick a genre (or don't)</label>
+            <select id="genre" class="search-input js-genre">
+                <option value="All-Genres" selected>All Genres</option>
+                <option value="28">Action</option>
+                <option value="12">Adventure</option>
+                <option value="16">Animation</option>
+                <option value="35">Comedy</option>
+                <option value="80">Crime</option>
+                <option value="99">Documentary</option>
+                <option value="18">Drama</option>
+                <option value="10751">Family</option>
+                <option value="14">Fantasy</option>
+                <option value="36">Historical</option>
+                <option value="27">Horror</option>
+                <option value="10402">Music</option>
+                <option value="9648">Mystery</option>
+                <option value="10749">Romance</option>
+                <option value="878">SciFi</option>
+                <option value="10770">TV Movie</option>
+                <option value="53">Thriller</option>
+                <option value="10752">War</option>
+                <option value="37">Western</option>
+            </select>
+            <button class="search-button" type="submit">Search</button>
+        </form>
+        <p class="js-error-message error-message"></p>
+        <section class="results-area hidden js-results-area">
+            <ul class='js-results'>
+            </ul>
+        </section>
+        <section class="streaming-area js-streaming-area">
+            <ul class="js-streaming"> 
+            </ul>
+        </section>
+        <section class="new-search">
+            <ul class="hidden js-new-search-container">
+            </ul>
+        </section>
+
+        <p>Feel free to contact me on my social media</p>
+           <div class="social-media">
+            <a href="#" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
+            <a href="https://github.com/armelwl1951/Museum-API-Capstone" target="_blank"><i class='fab fa-github'></i></a>
+            <a href="https://www.linkedin.com/in/ciera-hernandez-354022147/" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+           <footer class="copyright">© 2020 
+		  <a href="https://github.com/armelwl1951" target="_blank"> Ciera Hernandez</a>
+     </footer>
+</body>
+</html>
